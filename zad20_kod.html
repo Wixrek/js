@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea rows="50" cols="500">
+
+
+        <!DOCTYPE html>
+        <html>
+            <head>
+                <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+                <style>
+                    body {
+                        font-size: 30px;
+                        color: blue;
+                    }
+                </style>
+            </head>
+            <body>
+                
+                <script>
+                    class Vector {
+                        /** @type {number} */
+                        x;
+        
+                        /** @type {number} */
+                        y;
+        
+                        constructor(x, y) {
+                            this.x = +x;
+                            this.y = +y;
+                        };
+                    };
+        
+                    const calculateDistance = (/** @type {Vector} */v1, /** @type {Vector} */v2) => {
+                        return Math.hypot(
+                            Math.abs(v1.x - v2.x),
+                            Math.abs(v1.y - v2.y)
+                        );
+                    };
+        
+                    const a = new Vector(...prompt("Podaj A: (oddziel X i Y poprzez ,)").split(","));
+                    const b = new Vector(...prompt("Podaj B: (oddziel X i Y poprzez ,)").split(","));
+                    const c = new Vector(...prompt("Podaj C: (oddziel X i Y poprzez ,)").split(","));
+        
+                    const ab = calculateDistance(a, b);
+                    const bc = calculateDistance(b, c);
+                    const ac = calculateDistance(a, c);
+        
+                    document.write([
+                        `AB = ${ab}`,
+                        `BC = ${bc}`,
+                        `AC = ${ac}`,
+                    ].join("<br />"));
+                </script>
+            </body>
+        </html>
+    </textarea>
+</body>
+</html>

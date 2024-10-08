@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea rows="50" cols="500">
+
+
+        <!DOCTYPE html>
+        <html>
+            <head>
+                <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            </head>
+            <body>
+                <p>
+                    Podaj r= <input type="text" id="radius" />
+                </p>
+        
+                <p>
+                    Podaj h= <input type="text" id="height" />
+                </p>
+        
+                <br>
+                <br>
+        
+                <button id="submit">
+                    Oblicz
+                </button>
+        
+                <p id="density">
+                    V=
+                </p>
+        
+                <p id="size">
+                    Pc=
+                </p>
+        
+                <script>
+                    const readProperty = (id) => {
+                        return +document.getElementById(id).value;
+                    }
+        
+                    document.getElementById("submit").addEventListener("click", () => {
+                        const radius = readProperty("radius");
+                        const height = readProperty("height");
+        
+                        document.getElementById("density").textContent = `V= ${radius * Math.PI * radius * height}`;
+                        document.getElementById("size").textContent = `Pc = ${2 * radius * Math.PI * radius + radius * height}`
+                    })
+                </script>
+            </body>
+        </html>
+    </textarea>
+</body>
+</html>
