@@ -5,31 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zakrzewski 2P</title>
     <style>
+        thead{
+            text-align: center;
+            font-size: xx-large;
+        }
+        table{
+            margin: auto;
+            width: 100%;
+            border: 3px solid red;
+            padding: 10px;
+            color:gray;
+            background-color: black;
+        }
         p{
             display: flex;
             justify-content: center;
             width: 100%;
         }
         input{
-            background-color: silver;
-            color:navy;
-
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3mm solid;
+            padding-top: 5mm;
+            padding-bottom: 5mm;
+            width: 100%;     
+            border: 5mm solid green;
+            border-color: navy;
+            color:lightblue;
+            background-color: black;     
         }
+
+        
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
             background-color:silver;
         
-        }
-        h2 {
-            font-size: 1cm;
-            color:mediumblue;
-            text-align: center;
-        }
-        h3 {
-            color:mediumblue;
-            font-size: 0.5cm;
-            margin-top: 20px;
         }
         .container {
             display: flex;
@@ -38,6 +50,15 @@
         }
         .buttons-group {
             margin-bottom: 20px;
+        }
+        h2{
+            text-align: center;
+            font-size: xx-large;
+            color:blue;
+        }
+        h{
+            font-size: large;
+            color: lightblue;
         }
     </style>
     <script language="JavaScript">
@@ -51,46 +72,204 @@
 </head>
 <body>
 <h2>Szkielet zaliczeniowy JavaScript Ignacy Zakrzewski 2P</h2>
-
+<table>
 <div class="container">
-    <h3>Zadania</h3>
+    <thead>
+   <tr><td><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zadania&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3></td> 
+    <td><h3>Kody do zadań</h3></td>
+    
     <div class="buttons-group">
-        <input type="button" value="zadanie1-zakr" name="zadanie1" onclick="WinOpen('zad1_zakr')">
-        <input type="button" value="zadanie2-zakr" name="zadanie2" onclick="WinOpen('zad2_zakr')">
-        <input type="button" value="zadanie3-zakr" name="zadanie3" onclick="WinOpen('zad3_zakr')">
-        <input type="button" value="zadanie4-zakr" name="zadanie4" onclick="WinOpen('zad4_zakr')">
-        <input type="button" value="zadanie5-zakr" name="zadanie5" onclick="WinOpen('zad5_zakr')">
-        <input type="button" value="zadanie6-zakr" name="zadanie6" onclick="WinOpen('zad6_zakr')">
-        <input type="button" value="zadanie7-zakr" name="zadanie7" onclick="WinOpen('zad7_zakr')">
-        <input type="button" value="zadanie8-zakr" name="zadanie8" onclick="WinOpen('zad8_zakr')">
-        <input type="button" value="zadanie9-zakr" name="zadanie9" onclick="WinOpen('zad9_zakr')">
-        <input type="button" value="zadanie10-zakr" name="zadanie10" onclick="WinOpen('zad10_zakr')">
-        <input type="button" value="zadanie11-zakr" name="zadanie11" onclick="WinOpen('zad11_zakr')">
-        <input type="button" value="zadanie12-zakr" name="zadanie12" onclick="WinOpen('zad12_zakr')">
-        <input type="button" value="zadanie13-zakr" name="zadanie13" onclick="WinOpen('zad13_zakr')">
-        <input type="button" value="zadanie14-zakr" name="zadanie14" onclick="WinOpen('zad14_zakr')">
-        <input type="button" value="zadanie15-zakr" name="zadanie15" onclick="WinOpen('zad15_zakr')">
-        <input type="button" value="zadanie16-zakr" name="zadanie16" onclick="WinOpen('zad16_zakr')">
-        <input type="button" value="zadanie18-zakr" name="zadanie18" onclick="WinOpen('zad18_zakr')">
-        <input type="button" value="zadanie19-zakr" name="zadanie19" onclick="WinOpen('zad19_zakr')">
-        <input type="button" value="zadanie20-zakr" name="zadanie20" onclick="WinOpen('zad20_zakr')">
-        <input type="button" value="zadanie21-zakr" name="zadanie21" onclick="WinOpen('zad21_zakr')">
-    </div>
+        <tr>
+            <td>
+                <input type="button" value="zadanie1-zakr" name="zadanie1" onclick="WinOpen('zad1_zakr')">
+            </td>
+            <td><h>KODU DO ZAD 1 NIE MA</h></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="zadanie2-zakr" name="zadanie2" onclick="WinOpen('zad2_zakr')">
+            </td>
+            <td><h>KODU DO ZAD 2 NIE MA</h></td>
 
-    <h3>Kody do zadań</h3>
-    <div class="buttons-group">
-        <input type="button" value="zadanie11 kod-zakr" name="zadanie11-kod" onclick="WinOpen('zad11_kod')">
-        <input type="button" value="zadanie12 kod-zakr" name="zadanie12-kod" onclick="WinOpen('zad12_kod')">
-        <input type="button" value="zadanie13 kod-zakr" name="zadanie13-kod" onclick="WinOpen('zad13_kod')">
-        <input type="button" value="zadanie14 kod-zakr" name="zadanie14-kod" onclick="WinOpen('zad14_kod')">
-        <input type="button" value="zadanie15 kod-zakr" name="zadanie15-kod" onclick="WinOpen('zad15_kod')">
-        <input type="button" value="zadanie16 kod-zakr" name="zadanie16-kod" onclick="WinOpen('zad16_kod')">
-        <input type="button" value="zadanie18 kod-zakr" name="zadanie18-kod" onclick="WinOpen('zad18_kod')">
-        <input type="button" value="zadanie19 kod-zakr" name="zadanie19-kod" onclick="WinOpen('zad19_kod')">
-        <input type="button" value="zadanie20 kod-zakr" name="zadanie20-kod" onclick="WinOpen('zad20_kod')">
-        <input type="button" value="zadanie21 kod-zakr" name="zadanie21-kod" onclick="WinOpen('zad21_kod')">
-    </div>
-    <p><input type="button" value="zamknij okno" onclick="okno_zamknij()"></p>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="zadanie3-zakr" name="zadanie3" onclick="WinOpen('zad3_zakr')">
+            </td>
+            <td><h>KODU DO ZAD 3 NIE MA</h></td>
+
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="zadanie4-zakr" name="zadanie4" onclick="WinOpen('zad4_zakr')">
+            </td>
+            <td><h>KODU DO ZAD 4 NIE MA</h></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="zadanie5-zakr" name="zadanie5" onclick="WinOpen('zad5_zakr')">
+            </td>
+            <td><h>KODU DO ZAD 5 NIE MA</h></td>
+
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="zadanie6-zakr" name="zadanie6" onclick="WinOpen('zad6_zakr')">
+            </td>
+            <td><h>KODU DO ZAD 6 NIE MA</h></td>
+            
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="zadanie7-zakr" name="zadanie7" onclick="WinOpen('zad7_zakr')">
+            </td>
+            <td><h>KODU DO ZAD 7 NIE MA</h></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="zadanie8-zakr" name="zadanie8" onclick="WinOpen('zad8_zakr')">
+            </td>
+            <td><h>KODU DO ZAD 8 NIE MA</h></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="zadanie9-zakr" name="zadanie9" onclick="WinOpen('zad9_zakr')">
+            </td>
+            <td><h>KODU DO ZAD 9 NIE MA</h></td>
+
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="zadanie10-zakr" name="zadanie10" onclick="WinOpen('zad10_zakr')">
+            </td>
+            <td><h>KODU DO ZAD 10 NIE MA</h></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="zadanie11-zakr" name="zadanie11" onclick="WinOpen('zad11_zakr')">
+            </td>
+
+            <td>
+                <input type="button" value="zadanie11 kod-zakr" name="zadanie11-kod" onclick="WinOpen('zad11_kod')">
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="zadanie12-zakr" name="zadanie12" onclick="WinOpen('zad12_zakr')">
+            </td>
+
+            <td>
+                <input type="button" value="zadanie12 kod-zakr" name="zadanie12-kod" onclick="WinOpen('zad12_kod')">
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="zadanie13-zakr" name="zadanie13" onclick="WinOpen('zad13_zakr')">
+            </td>
+
+            <td>
+                <input type="button" value="zadanie13 kod-zakr" name="zadanie13-kod" onclick="WinOpen('zad13_kod')">
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="zadanie14-zakr" name="zadanie14" onclick="WinOpen('zad14_zakr')">
+            </td>
+
+            <td>
+                <input type="button" value="zadanie14 kod-zakr" name="zadanie14-kod" onclick="WinOpen('zad14_kod')">
+            </td>
+
+
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="zadanie15-zakr" name="zadanie15" onclick="WinOpen('zad15_zakr')">
+            </td>
+
+            <td>
+                <input type="button" value="zadanie15 kod-zakr" name="zadanie15-kod" onclick="WinOpen('zad15_kod')">
+            </td>
+
+
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="zadanie16-zakr" name="zadanie16" onclick="WinOpen('zad16_zakr')">
+            </td>
+
+            <td>
+                <input type="button" value="zadanie16 kod-zakr" name="zadanie16-kod" onclick="WinOpen('zad16_kod')">
+            </td>
+
+
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="zadanie18-zakr" name="zadanie18" onclick="WinOpen('zad18_zakr')">
+            </td>
+
+            <td>
+                <input type="button" value="zadanie18 kod-zakr" name="zadanie18-kod" onclick="WinOpen('zad18_kod')">
+            </td>
+
+
+
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="zadanie19-zakr" name="zadanie19" onclick="WinOpen('zad19_zakr')">
+            </td>
+
+            <td>
+                <input type="button" value="zadanie19 kod-zakr" name="zadanie19-kod" onclick="WinOpen('zad19_kod')">
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="zadanie20-zakr" name="zadanie20" onclick="WinOpen('zad20_zakr')">
+            </td>
+
+
+            <td>
+                <input type="button" value="zadanie20 kod-zakr" name="zadanie20-kod" onclick="WinOpen('zad20_kod')">
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="zadanie21-zakr" name="zadanie21" onclick="WinOpen('zad21_zakr')">
+            </td>
+
+            <td>
+                <input type="button" value="zadanie21 kod-zakr" name="zadanie21-kod" onclick="WinOpen('zad21_kod')">
+            </td>
+
+
+        </tr>
+    </div></thead>
+</table>
+<p><p>
+<table>
+    <thead>
+        <tr>
+            <td>
+                <p>przycisk zamykający okno</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <input type="button" value="zamknij okno" onclick="okno_zamknij()">
+                </p>
+            </td>
+        </tr>
+    </thead>
+</table>
 </div>
 </body>
 </html>
