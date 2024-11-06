@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea rows="50" cols="200">
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+            <style>
+                p{
+                    font-size:26px;
+                }
+            </style>
+        </head>
+        <p>
+            Podaj d= <input type="text" id="d" />
+        </p>
+        
+        <p>
+            Podaj x= <input type="text" id="x" />
+        </p>
+        
+        <br>
+        <br>
+        
+        <button id="submit">
+            Oblicz
+        </button>
+        
+        <p id="density">
+            Alfa=
+        </p>
+        
+        <p id="size">
+            Drabina=
+        </p>
+            <script>
+                const readProperty = (id) => {
+                    return +document.getElementById(id).value;
+                }
+        
+                document.getElementById("submit").addEventListener("click", () => {
+                    const d = readProperty("d");
+                    const x = readProperty("x");
+        
+                    document.getElementById("density").textContent = `Alfa= ${(Math.atan(d/x)*(180/Math.PI)).toFixed(2)}`;
+                    document.getElementById("size").textContent = `Drabina = ${Math.hypot(d, x)}`
+                })
+            </script>
+        
+        
+        </body>
+        </html>
+    </textarea>
+</body>
+</html>

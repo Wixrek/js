@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea rows="50" cols="300">
+        
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <style>
+        p{
+            font-size:26px;
+        }
+    </style>
+    <body>  <p>
+        Podaj A: <input type="text" id="a" />
+    </p>
+
+    <p>
+        Podaj B: <input type="text" id="b" />
+    </p>
+
+    <br>
+
+    <button id="submit">
+        Oblicz
+    </button>
+
+    <p id="output">
+
+    </p>
+    
+    <script>
+        const readProzakty = (id) => {
+            return +document.getElementById(id).value;
+        };
+
+        function pole_zak(a, b) {
+            return a * b;
+        };
+
+        function obwod_zak(a, b) {
+            return a * 2 + b * 2;
+        };
+
+        document.getElementById("submit").addEventListener("click", () => {
+            const [a, b] = ["a", "b"].map((key) => readProzakty(key));
+            document.getElementById("output").innerHTML = [
+                `Obwód: ${obwod_zak(a, b)} cm`,
+                `Pole: ${pole_zak(a, b)} cm ^ 2`
+            ].join("<br />");
+        })
+    </script>
+    </body>
+</html>
+
+    </textarea>
+</body>
+</html>

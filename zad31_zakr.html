@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <style>
+            :root{
+                color: #D5D5D6;
+            }
+            body{
+                background-color: #9B6EBC;
+                font-size: xx-large;
+            }
+        </style>
+        <script type="text/javascript">
+            var router = {
+            rodzaj: 'Bezprzewodowy',
+            kolor: 'Czarny',
+            marka: 'TP-Link',
+            router_wyswietl_zakrzewski: function ()
+            {
+                document.write(this.rodzaj + ' ' + this.kolor + ' ' + this.marka)
+            }
+            }
+            router.router_wyswietl_zakrzewski();
+            router.rokWynalezienia = 1969;
+            router.router_wypisz_zakrzewski=function() {alert('wynaleziono w: ' + this.rokWynalezienia + ' roku')}
+            router.router_wypisz_zakrzewski();
+        </script>
+    </head>
+    <body>
+        <br>
+        Programowanie obiektowe. <br>
+        Obiekt to router<br>
+        Pola:<br>
+            rodzaj<br>
+            kolor<br>
+            marka<br>
+            metoda: router_wyswietl_zakrzewski<br>
+            nowe pole to rokWynalezienia <br>
+            nowa metoda to router_wypisz_zakrzewski();<br>
+    </body>
+</html>
